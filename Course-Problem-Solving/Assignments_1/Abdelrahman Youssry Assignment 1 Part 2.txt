@@ -1,0 +1,455 @@
+// Assignment 2
+
+
+
+// Question 7
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//// Ask user for integer
+//// Make a selection between positive and Negative
+//// Print positive or negative
+//
+//int main(){
+//
+//    // Declare Variables
+//    int number{}; //user input
+//
+//    // Ask user for a number
+//    cout << "Enter a number"<< endl;
+//    cin >> number;
+//
+//    // Selection Flow
+//    if (number<0){
+//
+//        cout << " negative" << endl;
+//
+//    }
+//
+//    else{
+//
+//        cout<< "Positive" << endl;
+//
+//    }
+//
+//
+//}
+
+
+// ##################################################
+
+
+
+// Question 8
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//// Ask user for a number input
+//// Turn the digit into a number with if or use the number as index in array
+//// Print the number as word
+//
+//int main(){
+//
+//    // Declare Variables
+//    int number{}; //user input
+//    string num_word[5]={"one","two","three","four","five"}; // numbers as word
+//
+//    // Ask user for a number
+//    cout << "Enter a number"<< endl;
+//    cin >> number;
+//
+//    // Print number as word
+//    cout << num_word[number-1];
+//
+//
+//
+//}
+
+
+// ##################################################
+
+
+
+// Question 9
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//// Take five numbers
+//// Make a sum variable to store odd numbers
+//// Print sum
+//int main(){
+//
+//    // Declare variables
+//    int num; //Container for numbers
+//    int sum; //Summing result
+//
+//
+//    // User input
+//    cout << "This program sum odd numbers"<<endl;
+//    cout << "Enter 5 numbers" << endl;
+//
+//    for(int i=0; i<5;i++){
+//
+//        cin >> num;
+//        // Check if odd number
+//        if (num%2!=0){
+//
+//            // sum all the odd numbers
+//            sum+=num;
+//        }
+//    }
+//
+//    // Print the sum
+//    cout << "Sum of all odd values: "<<sum;
+//    return 0;
+//
+//}
+
+// ##################################################
+
+
+
+// Question 10
+
+//using namespace std;
+//#include <iostream>
+//#include <string>
+// Take a year from user (4 digit)
+// Check if it's divisible by 400 or 4
+//
+//int main (){
+//
+//     Declare variable
+//    int year{}; // user input a year
+//
+//     Ask user for input
+//    cout << "Enter a year" <<endl;
+//    cin >> year;
+//
+//     Check if divisible by 400 or 4
+//    if (year%400==0 || year%4==0){
+//
+//
+//        cout << "It's a leap year";
+//
+//    }
+//    else{
+//
+//
+//        cout << "It's not a leap year";
+//
+//    }
+//
+//
+//
+//    return 0;
+//
+//}
+
+// ##################################################
+
+
+
+// Question 11
+
+//using namespace std;
+//#include <iostream>
+//#include <string>
+//
+//// Get Current Year
+//// Ask user for year
+//// Print if Above 18 or not
+//int main(){
+//
+//    // Declare variables
+//    int year;
+//    int c_year=2024;
+//
+//
+//    // Ask user for year
+//    cout << "Enter your Birth Year as yyyy"<<endl;
+//    cin>> year;
+//
+//    // Print Year
+//    if (year>c_year){
+//
+//        cout<< "Not a valid year"<<endl;
+//    }
+//    else if ((2024-year)>18){
+//
+//        cout <<"Above 18"<<endl;
+//
+//    }
+//    else{
+//        cout <<"Not above 18"<<endl;
+//    }
+//
+//    return 0;
+//}
+
+
+
+// ##################################################
+
+
+
+// Question 12
+
+//using namespace std;
+//#include <iostream>
+//#include <string>
+//#include <unordered_map>
+//
+//
+//int main (){
+//
+//    // Declare variables
+//    int grade{};
+//
+//    // Ask user for his grade
+//    cout << "Enter your grade as a number between 0 and 100" << endl;
+//    cin >> grade;
+//
+//
+//    // Ask user for correct grade
+//    if (grade<0 || grade >100){
+//        do {
+//            cout << "Not a valid grade"<< endl;
+//            cout << "Enter your grade as a number between 0 and 100" << endl;
+//            cin >> grade;
+//            } while (grade<0 || grade >100);
+//        }
+//
+//
+//    // Check result in Grade system
+//    if (grade>80 && grade<100 ){
+//
+//        cout << 'A'<< endl;
+//    }
+//
+//    else if (grade<=80 && grade >=60){
+//
+//        cout << 'B'<< endl;
+//    }
+//
+//    else if (grade < 60 && grade >= 50  ){
+//
+//        cout << 'C'<< endl;
+//    }
+//    else if (grade < 50 && grade >= 45){
+//
+//        cout << 'D'<< endl;
+//    }
+//    else if (grade < 45 && grade >= 25  ){
+//
+//        cout << 'E'<< endl;
+//    }
+//
+//    else {
+//
+//        cout << 'F' << endl;
+//    }
+//
+//
+//
+//    return 0;
+//
+//}
+
+// ##################################################
+
+
+
+// Question 13
+
+//using namespace std;
+//#include <iostream>
+//#include <string>
+//
+//// Take user input
+//// Switch between different months
+//
+//int main (){
+//
+//    // Declare variables
+//    int month_number;
+//
+//    // Ask user for month number
+//    cout << "Enter the month number: " << endl;
+//    cin >> month_number;
+//
+//    switch(month_number){
+//
+//    case 1:
+//        cout << "January" <<endl;
+//        break;
+//    case 2:
+//        cout << "February" <<endl;
+//        break;
+//    case 3:
+//        cout << "March" <<endl;
+//        break;
+//    case 4:
+//        cout << "April" <<endl;
+//        break;
+//    case 5:
+//        cout << "May" <<endl;
+//        break;
+//    case 6:
+//        cout << "June" <<endl;
+//        break;
+//    case 7:
+//        cout << "July" <<endl;
+//        break;
+//    case 8:
+//        cout << "August" <<endl;
+//        break;
+//    case 9:
+//        cout << "September" <<endl;
+//        break;
+//    case 10:
+//        cout << "October" <<endl;
+//        break;
+//    case 11:
+//        cout << "November" <<endl;
+//        break;
+//    case 12:
+//        cout << "December" <<endl;
+//        break;
+//    }
+//
+//
+//    return 0;
+//
+//}
+
+// ##################################################
+
+
+
+// Question 14
+
+// Question 14
+
+// ##################################################
+
+//using namespace std;
+//#include <iostream>
+//#include <string>
+//
+//int main (){
+//
+//    // Declare variables
+//    int num;
+//
+//    // Ask user for number
+//    cout << "Enter a number"<< endl;
+//    cin >> num;
+//
+//    cout <<((num%2==0) ? "even": "odd")<<endl;
+//
+//
+//    return 0;
+//
+//}
+
+// ##################################################
+
+
+
+// Question 15
+
+//using namespace std;
+//#include <iostream>
+//#include <string>
+//
+//// Note I know it's easier and faster with "if and compare user to vowels" but I wanted to practice on the language
+//// Put a,e,I,o,u in an array
+//// Take user input
+//// Check if input in the array by loop
+//// print result
+//
+//int main (){
+//
+//    //Declare variables
+//    char vowel[10] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+//    char user_input;
+//
+//    // Ask user for a character
+//    cout << "Input a character: " << endl;
+//    cin >> user_input;
+//
+//    for (int i=0; i<10 ; i++){
+//
+//        if (user_input==vowel[i]){
+//
+//            cout << "vowel" <<endl;
+//            break;
+//        }
+//        else if (i==9 && user_input!=vowel[i]){
+//
+//            cout << "consonant" <<endl;
+//        }
+//    }
+//    return 0;
+//
+//}
+
+// ##################################################
+
+
+
+// Question 16
+
+//using namespace std;
+//#include <iostream>
+//#include <string>
+//// Take 3 int from user
+//// Store the first in max
+//// Compare the second and third to the max and replace if bigger
+//// Repeat for min
+//
+//
+//int main (){
+//
+//    // Declare variables
+//    int num{}, min_num{}, max_num{};
+//
+//    cout << "Enter a Total of 3 Numbers:" << endl;
+//
+//    for (int i=0; i<3; i++){
+//        cin >> num;
+//
+//        // Intialize max_num and min_num
+//        if (i==0){
+//
+//            max_num=num;
+//            min_num=num;
+//        }
+//
+//        // Store bigger number
+//        if (num >max_num){
+//
+//            max_num=num;
+//
+//        }
+//
+//         // Store min number
+//        if (num < min_num){
+//
+//            min_num=num;
+//
+//        }
+//    }
+//
+//    cout << "Max element = " << max_num << endl;
+//    cout << "Min element = " << min_num << endl;
+//
+//    return 0;
+//
+//}

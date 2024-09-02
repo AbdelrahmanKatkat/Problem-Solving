@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1720397160 source:c:\users\abdelrahman\desktop\route\assignments\assignments_3\assignment\assignment\main.cpp
+	<iostream>
+	<vector>
+	<string>
+
+1721861254 source:c:\users\abdelrahman\desktop\route\assignments\assignments_4\assignment\assignment\main.cpp
+	<iostream>
+	<string>
+
+1722726319 source:c:\users\abdelrahman\desktop\route\assignments\assignments_5\assignment\assignment\main.cpp
+	<iostream>
+	<string>
+	<iomanip>
+

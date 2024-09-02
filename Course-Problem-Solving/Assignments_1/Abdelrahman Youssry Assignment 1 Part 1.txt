@@ -1,0 +1,271 @@
+// Assignment 1
+
+
+// Question 1
+
+//#include <iostream>
+//using namespace std;
+//
+//// Take integer
+//// Print integer
+//int main (){
+//
+//		int number{}; // Declare a variable
+//		cout <<"Input ";
+//		cin >> number;
+//		cout << "Output "<<number;
+//
+//}
+
+// ##################################################
+
+
+
+// Question 2 Approach 1
+
+//#include <iostream>
+//using namespace std;
+//
+//// Take 3 numbers
+//// sum the numbers
+//// Print the sum
+//
+//int main (){
+//
+//
+//		// Declare variables
+//		int num_1,num_2,num_3;
+//
+//		// Aske user for input
+//
+//		cout << "Please enter first number: " <<endl;
+//		cin >> num_1;
+//
+//		cout << "Please enter second number "<<endl;
+//		cin >> num_2;
+//
+//		cout << "Please enter third number "<<endl;
+//		cin >> num_3;
+//
+//		cout << "Summation of 3 integers is " << endl << (num_1+num_2+num_3);
+//
+//
+//}
+
+
+// Question 2 Approach 2
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//
+//// Take 3 numbers
+//// sum the numbers
+//// Print the sum
+//
+//
+//int main (){
+//
+//  // Declare variables
+//	int num[3];  // Array
+//	string strings[3]={ "first", "second", "third"}; // String
+//
+//	// Aske user for input
+//    for (int i = 0; i < 3; i++) {
+//        cout << "Please enter " << strings[i] << " number: " << endl;
+//        cin >> num[i];
+//    }
+//
+//		// Calculate and display the sum of the numbers
+//	cout << "Summation of 3 integers is " << endl << (num[0]+num[1]+num[2]);
+//
+//}
+
+// ##################################################
+
+
+
+// Question 3 Approach 1
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//
+//// Take 3 numbers
+//// Declare avr variable double
+//// Print the average
+//
+//
+//int main () {
+//
+//    // Declare variables
+//    int num[3]; // Array of numbers
+//    double avr{}; // average number
+//    string strings[3]= {"first","second","third"};
+//
+//    // Take input from user
+//    for (int i=0; i<3; i++){
+//        cout << "Please enter " << strings[i] << " number: " << endl;
+//        cin >> num[i];
+//    }
+//
+//    // Calculate Average
+//    avr=float(num[0]+num[1]+num[2])/3;
+//
+//    cout << "The average = " << avr;
+//
+//
+//}
+
+
+// Question 3 Approach 2
+
+//#include <iostream>
+//using namespace std;
+//
+//// Take 3 numbers
+//// sum the numbers
+//// Print the sum
+//
+//int main (){
+//
+//
+//	// Declare variables
+//	int num_1,num_2,num_3;
+//	double avr{}; // average number
+//
+//	// Aske user for input
+//	cout << "Please enter first number: " <<endl;
+//	cin >> num_1;
+//
+//	cout << "Please enter second number "<<endl;
+//	cin >> num_2;
+//
+//	cout << "Please enter third number "<<endl;
+//	cin >> num_3;
+//
+//	// Calculate Average
+//    avr=float(num_1+num_2+num_3)/3;
+//
+//	cout << "The average = " << avr;
+//
+//
+//
+//}
+
+// ##################################################
+
+
+
+// Question 4
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//
+//// Ask user for width and height =
+//// Calculate Perimeter & area
+//// Print the perimeter & Area
+//// Test case 5 & 3
+//
+//
+//int main () {
+//
+//    // Declare variables
+//    int rec_param[2]; //Rectangle parameters
+//    string strings[2]= {"Width = ","Height = "};
+//
+//    // Take input from user
+//    for (int i=0; i<2; i++){
+//        cout <<  strings[i];
+//        cin >> rec_param[i];
+//    }
+//
+//    // Calculate Perimeter & Area and print them
+//    cout << "The perimeter = " << 2*(rec_param[0]+rec_param[1])<<endl;
+//    cout << "The area = " << (rec_param[0]*rec_param[1]);
+//
+//}
+
+// ##################################################
+
+
+
+// Question 5
+
+//#include <iostream>
+//using namespace std;
+//
+//
+//// Ask user number
+//// Use modulus operator with 10 in loop
+//// Take result and sum it
+//// Test case 132
+//
+//
+//int main () {
+//
+//    // Declare variables
+//    int number{};  // Store number
+//    int values[3]; // Store number values
+//
+//    // Ask user for the number
+//    cout << "Input : ";
+//    cin >> number;
+//
+//    // Use modulus operator 3 times
+//    for (int i=0; i<3; i++){
+//        values[i]=number%10;
+//    }
+//
+//    // Sum & print result
+//    cout << "Output : " <<(values[0]+values[1]+values[2]) ;
+//
+//}
+
+// ##################################################
+
+
+
+// Question 6
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//
+//// Converter from seconds to H:M:S
+//// Take Second from user
+//// Use Modulus Operator to get seconds
+//// Use dividion to get minutes
+//// Get the hours by subtraction
+//// Store values in array to call later
+//// print output as Output: H:M:S
+//// Test case 25300
+//
+//int main () {
+//
+//    // Declare variables
+//    int seconds;  // secinds
+//    int times[3]; // seconds, minutes, hours
+//
+//    // Take input from user
+//    cout << "Please enter time in seconds: " <<endl;
+//    cin >> seconds;
+//
+//    // Calculate H, M , S
+//    times[0]=seconds % 60;
+//    seconds-=times[0];
+//    times[2]=seconds / 3600;
+//    times[1]=int(60*((float(seconds)/3600)-times[2]));
+//
+//    // Convert to H:M:S and print it
+//    cout << "Output: H:M:S = ";
+//    cout << times[2] << ':' << times[1] << ':' << times[0];
+//
+//}
+
+

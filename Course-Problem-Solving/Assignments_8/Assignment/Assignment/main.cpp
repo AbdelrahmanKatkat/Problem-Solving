@@ -1,0 +1,218 @@
+// Assignment 8
+
+
+// Question 1
+//
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//const double PI = 3.14159265358979323846;
+//
+//
+//class Animal {
+//protected:
+//    // Attributes
+//    string name;
+//public:
+//    // Parameterized Constructor
+//    Animal (string name): name(name)
+//    {
+//
+//    }
+//
+//    // Abstract greet method
+//    virtual void greets() const=0;
+//
+//};
+//
+//
+//class Cat: public Animal{
+//public:
+//    // Parameterized Constructor
+//    Cat(string name): Animal(name)
+//    {
+//
+//
+//    }
+//    void greets() const override{ // const override to match parent signature for override
+//
+//        cout << "Meow"<< endl;
+//    }
+//};
+//
+//class Dog:public Animal{
+//public:
+//    // Parameterized Constructor
+//    Dog(string name): Animal(name)
+//    {
+//
+//
+//    }
+//    void greets() const override{
+//
+//        cout << "Woof"<< endl;
+//    }
+//    void greets( Dog& another) const{
+//
+//        cout << "Woooof"<< endl;
+//    }
+//
+//
+//};
+//
+//class BigDog:public Dog{
+//public:
+//    // Parameterized Constructor
+//    BigDog(string name): Dog(name)
+//    {
+//
+//
+//    }
+//    void greets() const override{
+//
+//        cout << "WooW"<< endl;
+//    }
+//    void greets(Dog& another) const{
+//
+//        cout << "Woooow"<< endl;
+//    }
+//    void greets(BigDog& another) const{
+//
+//        cout << "Wooooooow"<< endl;
+//    }
+//};
+//
+//
+//int main()
+//{
+//    // Instance creation
+//    Cat x("Lucy");
+//    Dog y("Sam");
+//    BigDog z("Rex");
+//    Dog n("Tyn");
+//    BigDog m("Tym");
+//
+//    // Display info
+//    x.greets();
+//    y.greets(n);
+//    z.greets(m);
+//    return 0;
+//}
+
+/////////////////////////////////////////////////////
+
+// Question 2
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//
+//class Vehicle{
+//protected:
+//    // Attributes
+//    string model;
+//    string regNum;
+//    int v_speed;
+//    double f_cap;
+//    double f_con;
+//public:
+//    //Parameterized Constructor
+//    Vehicle(string model, string regnNum, int v_speed, double f_cap, double f_con): model(model), regNum(regNum),v_speed(v_speed),f_cap(f_cap),f_con(f_con)
+//    {
+//
+//
+//    }
+//    // Virtual Display
+//    virtual void displayInfo()const{
+//
+//        cout <<"The Vehicle model is: "<< model<< endl;
+//        cout <<"The Registration number is: "<< regNum<< endl;
+//        cout <<"The Vehicle speed (km/hour) is: "<< v_speed<< endl;
+//        cout <<"The Fuel capacity (liters) is: "<< f_cap<< endl;
+//        cout <<"The Fuel consumption (liter/km) is: "<< f_con<< endl;
+//    }
+//
+//};
+//
+//class Truck: public Vehicle{
+//private:
+//    // Attributes
+//    double weightLimit;
+//public:
+//    //Parameterized Constructor
+//    Truck(string model, string regnNum, int v_speed, double f_cap, double f_con, double weightLimit): Vehicle(model, regNum,v_speed,f_cap,f_con), weightLimit(weightLimit)
+//    {
+//
+//
+//    }
+//    // Setter & Getters
+//    void setWeightLimit(const double& weightLimit){
+//        this -> weightLimit=weightLimit;
+//
+//    }
+//
+//    double getWeightLimit(){
+//        return weightLimit;
+//    }
+//
+//    // override Display & print all info
+//    void displayInfo() const override{
+//        Vehicle::displayInfo();
+//        cout <<"The Cargo weight limit (Kilo grams) is: "<< weightLimit<< endl;
+//
+//    }
+//
+//};
+//
+//class Bus: public Vehicle{
+//private:
+//    // Attributes
+//    int noPassengers;
+//public:
+//    //Parameterized Constructor
+//    Bus(string model, string regnNum, int v_speed, double f_cap, double f_con, int noPassengers): Vehicle(model, regNum,v_speed,f_cap,f_con), noPassengers(noPassengers)
+//    {
+//
+//
+//    }
+//    // Setter & Getters
+//    void setPassengers(const int& noPassengers){
+//        this -> noPassengers=noPassengers;
+//
+//    }
+//
+//    double getPassengers(){
+//        return noPassengers;
+//    }
+//
+//    // override Display & print all info
+//    void displayInfo() const override{
+//        Vehicle::displayInfo();
+//        cout <<"The Num of passengers is: "<< noPassengers<< endl;
+//
+//    }
+//
+//};
+//
+//int main()
+//{
+//    //Create instance
+//    cout << "Truck Data" << endl;
+//    Truck x("G11", "15S",10,5,3, 100);
+//    x.setWeightLimit(300);
+//    x.displayInfo();
+//    cout <<"/========================"<< endl;
+//
+//
+//    cout << "Bus Data"<< endl;
+//    Bus y("G11", "15S",10,5,3, 5);
+//    y.setPassengers(10);
+//    y.displayInfo();
+//    cout <<"/========================"<< endl;
+//
+//
+//
+//    return 0;
+//}
+
